@@ -54,15 +54,20 @@ OpenWeatherMap API를 이용하여 실시간으로 날씨 데이터를 받아와
 * npm
   ```sh
   npm install npm@latest -g
+  npm install nodemon -g
   ```
 1. 클론
    ```sh
    git clone https://github.com/hOch1/WeatherApp.git
    ```
 
-2. API입력 `/public/js/getApi.js line 5`
+2. API사용 `/public/js/getApi.js line 5`
    ```JS
    'API KEY' = openweathermap에서 발급받은 api key
+   ```
+3. 실행하기
+   ```sh
+   nodemon
    ```
 
 
