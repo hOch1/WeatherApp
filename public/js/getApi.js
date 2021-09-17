@@ -5,7 +5,7 @@ async function getApi(city) {
 		const apiCall = await axios.get(
 			'http://api.openweathermap.org/data/2.5/weather?q=' +
 				city +
-				'&appid=026ab5c22636cd9029660b0b20c6a72e'
+				'API KEY'
 		);
 		return apiCall.data;
 	} catch (err) {
