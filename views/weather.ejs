@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+			crossorigin="anonymous"
+		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="css/weather.css" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+
+		<!-- Jquery -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+
+		<title>Weather App</title>
+	</head>
+	<body>
+		
+
+		<div class="weather-wrapper">
+			<div class="weather-card">
+				<div class="icon"></div>
+				<h1><%= (city.main.temp-273).toFixed() %>°C</h1>
+				<p><%= name %></p>
+			</div>
+		</div>
+		
+
+		<script>
+			var weather = '<%=city.weather[0].main%>';
+
+			if (weather == 'Clear') {
+				$('body').css('background-image', 'url(../img/clear.jpg)');
+				$('.icon').css('background-image', 'url(../icons/sun.png)');
+			} else if (weather == 'Clouds') {
+				$('body').css('background-image', 'url(../img/clouds.jpg)');
+				$('.icon').css('background-image', 'url(../icons/clouds.png)');
+			} else if (weather == 'Rain') {
+				$('body').css('background-image', 'url(../img/rain.jpg)');
+				$('.icon').css('background-image', 'url(../icons/rain.png)');
+			} else if (weather == 'Thunderstorm') {
+				$('body').css('background-image', 'url(../img/thunder.jpg)');
+				$('.icon').css('background-image', 'url(../icons/storm.png)');
+			} else if (weather == 'Snow') {
+				$('body').css('background-image', 'url(../img/snow.jpg)');
+				$('.icon').css('background-image', 'url(../icons/snow.png)');
+			}
+		</script>
+		
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
