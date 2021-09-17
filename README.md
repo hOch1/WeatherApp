@@ -49,13 +49,18 @@ OpenWeatherMap API를 이용하여 실시간으로 날씨 데이터를 받아와
 <!-- GETTING STARTED -->
 ## 시작하기
 
+### 라이브러리 설치
+  ```sh
+  npm install express ejs axios --save
+  ```
+
 ### 사용법
 
 * npm
-  ```sh
-  npm install npm@latest -g
-  npm install nodemon -g
-  ```
+    ```sh
+    npm install npm@latest -g
+    npm install nodemon -g
+    ```
 1. 클론
    ```sh
    git clone https://github.com/hOch1/WeatherApp.git
