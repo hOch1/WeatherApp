@@ -1,7 +1,6 @@
 # WeatherApp
 
 
-[![MIT License][license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
@@ -11,19 +10,19 @@
   <summary>목차</summary>
   <ol>
     <li>
-      <a href="#프로젝트 소개">프로젝트 소개</a>
+      <a href="#프로젝트-소개">프로젝트 소개</a>
       <ul>
         <li><a href="#프레임워크">프레임워크 & API</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">시작하기</a>
+      <a href="#시작하기">시작하기</a>
       <ul>
-        <li><a href="#prerequisites">사용법</a></li>
+        <li><a href="#사용법">사용법</a></li>
       </ul>
     </li>
-    <li><a href="#license">라이센스</a></li>
-    <li><a href="#contact">정보</a></li>
+    <li><a href="#라이센스">라이센스</a></li>
+    <li><a href="#정보">정보</a></li>
   </ol>
 </details>
 
